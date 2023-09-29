@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h5 class="text-center pt-5 mt-5">S P L I</h5>
+    <h5 class="text-center mb-5">T T E R</h5>
+
+    <div class="container d-flex flex-wrap bg-white pt-5 rounded-4 pb-4 w-50">
+        <form  class="bill col-md-6">
+            <div>
+                <div class="d-flex ps-md-2 ps-2 flex-column">
+                    <label for="montant">Bill</label>
+                    <input type="number" class="border-0 bg-secondary-subtle rounded-1" name="" id="montant">
+                </div>
+                <div class="ps-md-2 ps-2 mt-4">
+                    <span>Select Tip %</span>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <div class="Tip w-25 text-white text-center py-1 rounded-3" id="Tip5">5%</div>
+                        <div class="Tip w-25 text-white text-center py-1 rounded-3" id="Tip10">10%</div>
+                        <div class="Tip w-25 text-white text-center py-1 rounded-3" id="Tip15">15%</div>
+                        <div class="Tip w-25 text-white text-center py-1 rounded-3" id="Tip25">25%</div>
+                        <div class="Tip w-25 text-white text-center py-1 rounded-3" id="Tip50">50%</div>
+                        <div class="Tip bg-secondary-subtle w-25 text-white text-center py-1 rounded-3" id="Tipcustom">Custom</div>
+                    </div>
+                </div>
+                <div class="d-flex mt-4 ps-md-2 ps-2 flex-column">
+                    <label for="persons">Number of People</label>
+                    <input type="number" min="1" class="bg-secondary-subtle border-0 rounded-1" name="" id="person">
+                </div>
+            </div>
+
+        </form>
+        <div class="result rounded-3 pb-4 col pt-4 mt-md-0 mt-5">
+            <div class="ps-3 d-flex justify-content-between">
+                <div>
+                    <span>tip Amount</span><br>
+                    <span class="fs-6 fw-lighter">/ person</span>
+                </div>
+                <h1 class="pe-3" id="tipAmountPerson">$0.00</h1>
+            </div>
+            <div class="ps-3 d-flex mt-3 justify-content-between">
+                <div>
+                    <span>Total</span><br>
+                    <span class="fs-6 fw-lighter">/ person</span>
+                </div>
+                <h1 class="pe-3 mb-3" id="totalParPerson">$0.00</h1>
+            </div>
+
+            <div class="text-center"><button type="button" class="mt-5 btn w-75">Reset</button></div>
+        </div>
+    </div>
+    
+
+
+
+
+    <!-- Bootstrap 5 CDN Links -->
+    <script src="https://kit.fontawesome.com/3e56bd9026.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

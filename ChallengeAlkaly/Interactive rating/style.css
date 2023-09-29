@@ -1,0 +1,27 @@
+.notes{
+    background-color: #282e38;
+    cursor: pointer;
+}
+.btn{
+    background-color: #fd7612;
+    color: #ffffff;
+}
+.btn:hover{
+    background-color: #ffffff;
+    color: black;
+}
+.notes:hover{
+    background-color:#7d8998;
+}
+
+.active{
+    background-color: #fd7612;
+}
+.final,.votes{
+    background-color: #1e242e;
+}
+
+.finalApp{
+    background-color: #273139;
+    color: #fc7413ac;
+}

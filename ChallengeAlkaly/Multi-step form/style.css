@@ -1,0 +1,151 @@
+body{
+    background-color: rgb(215, 233, 249);
+}
+.rounded-circle{
+    border: 1px solid #fff;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    justify-content: center;
+
+}
+.sidebar{
+    height: 500px;
+}
+.sideMenu{
+    justify-content: space-around;
+    height: 50%;
+}
+.formulaire{
+    height: 500px ;
+    width: 60%;
+}
+.container{
+    width: 70%;
+}
+.form3,.form2,.form4{
+    display: none;
+}
+.arcade,.advanced,.pro{
+    cursor: pointer;
+}
+
+
+/* Styles for the switch */
+.switch {
+    margin-top: 5px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+}
+
+/* Hide the default checkbox input */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Style the slider (the "switch" part) */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #002b3d;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+/* Change the color of the slider when it's checked (On state) */
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 550px;
+}
+
+/* Style the slider when the checkbox is checked (On state) */
+input:checked + .slider {
+    background-color: #002043;
+}
+
+input:checked + .slider::before {
+    transform: translateX(33px);
+}
+
+/* Optional: Add some padding and a border to the switch container */
+.switch {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 34px;
+}
+
+/* Styles for the checkbox container */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style the checkbox input */
+.checkbox-container input {
+    opacity: 1;
+    width: 0;
+    height: 0;
+
+}
+
+/* Style the custom checkbox */
+.checkbox-container .checkmark {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #cccccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Style the custom checkbox when it's checked */
+.checkbox-container input:checked + .checkmark::before {
+    content: '\2714'; /* Checkmark character */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(157, 0, 255);
+    color: white;
+}
+
+/* Style the checkbox content (title and description) */
+.checkbox-container .checkbox-content {
+    flex-grow: 1;
+}
+
+.checkbox-container h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.checkbox-container p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+#btnback1,#btnback2,#btnback3{
+    cursor: pointer;
+}
+
+.planselect{
+    background-color: rgb(228, 228, 228);
+    /* border: 10px solid rgb(157, 0, 255); */
+}

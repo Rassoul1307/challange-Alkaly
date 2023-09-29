@@ -1,0 +1,23 @@
+body{
+    background-color: #c4e4e6;
+}
+.Tip{
+    background-color: #00474b;
+    cursor: pointer;
+}
+.Tip.selected{
+    background:#36b3bc ;
+}
+input{
+    width: 90%;
+}
+.result{
+    background-color: #00474b;
+    color: white;
+}
+h1{
+    color: #26c3aa;
+}
+.btn{
+    background-color: #26c3aa;
+}

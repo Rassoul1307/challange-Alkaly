@@ -1,0 +1,102 @@
+/* styles.css */
+
+/* Style de base pour le graphique */
+body{
+    background-color: #f9eadd;
+}
+.chart {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 50%;
+    margin: auto;
+    background-color: #f5f5f5;
+    padding: 0px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #00000065;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+/* Style des barres */
+.bar-wrapper {
+    text-align: center; /* Pour centrer le texte "day" sous la barre */
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 9%;
+    background-color: #ed755f;
+    /* margin: 0px 20px; */
+    color: #fff;
+    
+    transition: height 0.5s, background-color 0.5s;
+}
+
+/* Style des légendes "day" */
+.bar-label {
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    font-size: 22px;
+    font-weight: 600;
+    opacity: 0.5;
+    color: #000000;
+    margin-bottom: -22px; /* Espace entre la barre et le texte "day" */
+}
+
+
+
+/* styles.css */
+
+/* ... Vos styles existants ... */
+
+/* Style des barres au survol */
+.bar:hover {
+    background-color: #75b7bb;
+    position: relative;
+}
+
+/* Style de l'infobulle */
+.bar-tooltip {
+    position: absolute;
+    top: -30px; /* Positionnez l'infobulle au-dessus de la barre */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0; /* Par défaut, l'infobulle est invisible */
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* L'infobulle ne bloque pas les clics sur la barre */
+}
+
+/* Afficher l'infobulle lorsque la barre est survolée */
+.bar:hover .bar-tooltip {
+    opacity: 1;
+}
+
+.solde{
+    position: relative;
+    background-color: #ec745c;
+    width: 53%;
+    padding-top: 8px;
+    padding-left: 25px;
+    margin: auto;
+    border-radius: 5px;
+}
+.solde p {
+    color: #fff;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+.montant{
+    margin-top: 0px;
+    padding-bottom: 20px;
+    color: white;
+}

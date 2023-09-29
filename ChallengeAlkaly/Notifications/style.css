@@ -1,0 +1,22 @@
+.profil{
+    width: 40px;
+    height: 35px;
+}
+.notif{
+    cursor: pointer;
+    background-color: #f7fafc;
+    padding: 10px 30px;
+}
+.notifLu{
+    background-color: white;
+}
+.point{
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+}
+.toutLus{
+    cursor: pointer;
+}
